@@ -8,6 +8,7 @@ on:
   push:
     branches: [ main ]
   
+  workflow_dispatch:
   # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -27,7 +28,7 @@ jobs:
           version: 12
         
       - name: GitHubAction for Yarn
-        uses: Borales/actions-yarn@v1.22.10
+        uses: Borales/actions-yarn@v2.1.0
         with:
           cmd: install
       
