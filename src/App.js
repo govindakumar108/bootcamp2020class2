@@ -4,6 +4,7 @@ function App() {
   return (
     <div className="App">
       <h1>Hello 108 108999108 108 World </h1>
+      <p>Hello from All numbers</p>
     </div>
   );
 }
